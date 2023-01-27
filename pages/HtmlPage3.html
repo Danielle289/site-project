@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>הגשה</title>
+    <link href="../StyleSheet3.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="div1" style="font-size:150%">
+
+        <ul class="a" >
+            <li><a class="active" href="HtmlPage1.html">ראשי</a></li>
+            <li><a href="HtmlPage2.html">עמוד 1</a></li>
+            <li><a href="HtmlPage3.html">עמוד 2</a></li>
+            <li><a href="HtmlPage4.html">עמוד 3</a></li>
+            <li><a href="HtmlPage5.html">עמוד 4</a></li>
+            <li><a href="HtmlPage6.html">עמוד 5</a></li>
+        </ul>
+        <h1 >שלבים להגשה</h1>
+        <h2 class="one" >העמדה נכונה</h2>
+        <img class="one" src="../img/Serve_01.jpg" />
+
+        <ul class="b" >
+            <li>עמוד לצד הרשת ממש מאחורי קו הבסיס</li>
+            <li>כף הרגל הקדמית שלך צריכה להצביע לכיוון עמוד הרשת</li>
+            <li>כף הרגל האחורית שלך צריכה להקביל לקו הבסיס </li>
+            <li>המחבט שלך נמצא בגובה הירכיים מול הגוף ומצביע לכיוון המטרה שלך</li>
+
+        </ul>
+
+        <h2 class="two" > האחיזה הנכונה עבור הגשה</h2>
+        <img class="two" src="../img/serve_02.jpg" />
+        <img class="b" id="ball" src="כדור טניס.png" />
+        <p class="one" >אחוז את המחבט כמו פטיש והחזק את המחבט</p>
+
+        <h2 class="two" >לקיחת המחבט לאחור</h2>
+        <img class="one" src="../img/serve_03.jpg" />
+        <p class="one" id="p1">
+            מעמדת ההתחלה, תפיל את שתי הידיים, תפריד אותן כשהן מגיעות לירך הפנימית של הרגל הקדמית שלך ותעיף את הכדור תוך כדי העלאת המחבט שלך לעמדת זריקה.
+
+        </p>
+
+        <h2 class="two" >הרמת הכדור</h2>
+        <img class="two" src="../img/serve_04.jpg" />
+
+        <ul class="b">
+            <li>זרוק את הכדור עם זרוע ישרה</li>
+            <li>
+                שחרר את הכדור בגובה העיניים שלך והמשיכו להרים את הזרוע למעלה בעקבות הכדור.
+            </li>
+        </ul>
+        <h2 class="two">תנופה</h2>
+        <img class="one" src="../img/serve_05.jpg" />
+        <p class="one" >
+            הושיט יד כדי להכות בכדור - ככל שתיצור מגע גבוה יותר כך תוכל לייצר יותר כוח וכפף ברכיים
+        </p>
+        <h2 class="two" id="zoomtextdiv2">תנופה</h2>
+        <img class="one" src="../img/serve_06.jpg" />
+        <p class="one" >
+            זרוע ההגשה כפופה בזווית של כ-90 מעלות.
+
+            . הכתפיים מסובבות והברכיים כפופות
+            .ודחוף מעט את הירכיים שלך ותעביר את המשקל לכף הרגל הקדמית, ועקל את הגב התחתון.
+        </p>
+        <button onclick="zoomintext()">+ הגדל </button>
+        <button onclick="zoomouttext()">- הקטן</button>
+    </div>
+    <script>
+        fontSize = 26;
+        function zoomintext() {
+            newfontSize = fontSize * (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+        function zoomouttext() {
+            newfontSize = fontSize / (1.1);
+            div1.style.fontSize = newfontSize + 'px';
+            fontSize = newfontSize;
+        }
+
+        document.getElementById('ball').onclick = function () {
+            document.getElementById('ball').style.display="none";
+        }
+
+
+    </script>
+
+</body>
+</html>

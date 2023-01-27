@@ -1,0 +1,50 @@
+﻿body {
+    
+    background-image: url('img/טניס חימר.jpg');
+}
+ul.a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:auto;
+  background-color:burlywood;
+  position: sticky;
+  top: 0;
+}
+
+li a{
+  float: left;
+}
+
+li a {
+  display:block;
+  color:white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:brown;
+}
+
+.active {
+  background-color:coral;
+}
+
+
+h1 {
+    text-align: center;
+    
+}
+
+p.one {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    direction: rtl;
+    color: white;
+    text-decoration-thickness: auto;
+    padding: 50px;
+
+    font-family: Geneva, Verdana, sans-serif;
+}

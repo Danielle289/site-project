@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../ragistration.css" rel="stylesheet" />
+
+    <script>
+
+
+        function checkAllFields() {
+            var result = checkFirstName();
+            var result = checkLastName();
+            var result = checkYear();
+            var result = checkPassword();
+            var result = checkright();
+            return result;
+        }
+        var gender;
+        if (gender1.checked)
+            gender = gender1.value;
+        else if (gender2.checked)
+            gender = gender2.value;
+
+        function checkFirstName() {
+            if (firstname.value.length < 2) {
+                div1.innerHTML = "חייב להיות יותר ארוך מתו אחד";
+                return false;
+            }
+            else
+                return true;
+        }
+        function checkLastName() {
+            if (lastname.value.length < 3) {
+                div2.innerHTML = "חייב להיות יותר ארוך מ-3  תווים";
+                return false;
+            }
+            else
+                return true;
+        }
+
+        function checkYear() {
+            if (bornYear.value < 1900 || bornYear.value > 2023) {
+                div3.innerHTML = "יש למלא ערך בין 1900 ל 2023";
+                return false;
+            }
+            else
+                return true;
+        }
+        function checkPassword() {
+            if (password1.value < 7) {
+                div4.innerHTML = "הסיסמה צריכה להיות מעל 7 תווים ";
+                return false;
+            }
+            else
+                return true;
+        }
+        function checkright() {
+            if (password1 != password2) {
+                div5.innerHTML = "אימות סיסמה לא תואם"
+                return false;
+            }
+            else
+                return true;
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    
+
+    <div id="header">
+
+        <a href="../pages/HtmlPage1.html"><img src="../img/בית.gif" alt="home" style=" float: left; padding-left: 20px;"></a>
+
+        <h1>טופס הרשמה לאתר</h1>
+    </div>
+    <form id="formregister" onsubmit="return checkAllFields()" method="post">
+        <table id="table">
+            <tr>
+                <td>שם פרטי:</td>
+                <td>
+                    <input type="text" id="firstname" name="firstname" placeholder="שם פרטי" />
+                </td>
+                <td>
+                    <div id="div1" style="color:red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>שם משפחה: </td>
+                <td>
+                    <input type="text" id="lastname" name="lastname" placeholder="שם משפחה " />
+                </td>
+                <td>
+                    <div id="div2" style="color:red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td> שנת לידה : </td>
+                <td>
+                    <input type="number" id="bornYear" name="bornYear" /><br />
+                </td>
+                <td>
+                    <div id="div3" style="color:red"></div>
+                </td>
+            </tr>
+            <tr>
+                <td> אזרחות </td>
+                <td>
+                    אזרחות ישראלית : <input type="checkbox" name="azarachot" />
+                    אחר : <input type="checkbox" name="azarachot" />
+                </td>
+            </tr>
+            <tr>
+                <td> מגדר :</td>
+                <td>
+                    נקבה <input type="radio" id="female" name="gender" value="נקבה" />
+                    זכר <input type="radio" id="male" name="gender" value="זכר" />
+                </td>
+            </tr>
+            <tr>
+                <td> סיסמא : </td>
+                <td>
+                    <input type="password" id="password1" name="password" />
+                </td>
+                <td><div id="div4" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> אימות סיסמא : </td>
+                <td>
+                    <input type="password" id="password2" name="radText" />
+                </td>
+                <td><div id="div5" style="color:red"></div></td>
+            </tr>
+            <tr>
+                <td> עיר :</td>
+                <td>
+                    <select id="city" name="city">
+                        <option value="ראשון לציון ">ראשון לציון</option>
+                        <option value="תל אביב ">תל אביב</option>
+                        <option value="באר שבע">באר שבע</option>
+                        <option value="אשדוד">אשדוד</option>
+                        <option value="אחר">אחר</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> תחביבים :</td>
+                <td>
+                    <textarea id="תחביבים" name="hobbies" rows="4" cols="50"> </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td> אימייל :</td>
+                <td>
+                    <input type="email" name="email" />
+                </td>
+            </tr>
+            <tr>
+                <td>טלפון  : </td>
+                <td>
+                    <input type="number" name="email" />
+                </td>
+            </tr>
+
+        </table>
+        <button type="submit">שלח</button>
+        <button type="reset">אפס</button>
+    </form>
+</body>
+</html>

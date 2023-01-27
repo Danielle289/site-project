@@ -1,0 +1,69 @@
+﻿body {
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('img/אצטדיון1.jpg');
+}
+
+ul.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color:lightsteelblue;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color:darkgrey;
+    }
+
+.active {
+    background-color:cornflowerblue;
+}
+
+
+h1.one {
+    text-align: center;
+    font-size: 50px;
+    color:black;
+}
+h1.two{
+    text-align: center;
+    font-size: 50px;
+    color:antiquewhite;
+}
+
+p.one {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    direction: rtl;
+    font-size: 30px;
+    color:white;
+    text-decoration-thickness: auto;
+    padding: 50px;
+    font-weight: 400;
+    display: block;
+    font-family: Geneva, Verdana, sans-serif;
+}
+img.b {
+    width: 40px;
+    height: 40px;
+    float: left;
+}

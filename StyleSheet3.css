@@ -1,0 +1,98 @@
+﻿
+
+ul.a {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:auto;
+  background-color:peachpuff;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li a{
+  float: left;
+}
+
+li a {
+  display:block;
+  color:darkgray;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:burlywood;
+}
+
+.active {
+  background-color:darkgoldenrod;
+}
+body {
+    font-family: Arial;
+    background-image: url('img/רקע.jpg');
+    padding: 10px;
+}
+
+
+ul.b {
+    list-style-type: circle;
+    direction: rtl;
+    color: aliceblue;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+img.one {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin-top: 30px;
+    position: inherit;
+}
+img.two {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin-top: 10px;
+    position: inherit;
+}
+h2.one {
+    text-align: right;
+    color: antiquewhite;
+    padding-top:50px;
+
+}
+
+h2.two {
+    text-align: right;
+    color: antiquewhite;
+    padding-top: 200px;
+}
+h1 {
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+p.one {
+    direction: rtl;
+    color: aliceblue;
+    font-family: Geneva, Verdana, sans-serif;   
+
+}
+img.b {
+    width: 40px;
+    height: 40px;
+    float: left;
+    position:inherit;
+}
+button {
+    direction: rtl;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin: 0px;
+    background-color: #fbe2fb;
+    padding: 20px;
+    position: -webkit-sticky; /* Safari */
+}

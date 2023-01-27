@@ -1,0 +1,71 @@
+﻿body {
+    
+    background-image: url('img/טניס דשא.jpg');
+}
+
+ul.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color:cornsilk;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li a {
+    float: left;
+}
+
+li a {
+    display: block;
+    color:cadetblue;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+
+    li a:hover {
+        background-color:darkgreen;
+    }
+
+.active {
+    background-color:darkolivegreen;
+}
+
+
+
+
+
+h2.two {
+    text-align:center;
+    font-size: 37px;
+    color:lightskyblue;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: Highlight;
+    text-shadow: 0 0 3px Highlight, 0 0 5px cadetblue;
+}
+
+p.one {
+    
+    line-height: 1.6;
+    direction: rtl;
+    font-size: 30px;
+    color: white;
+    text-decoration-thickness: auto;
+    padding: 50px;
+    font-weight: 400;
+    display: block;
+    font-family: Geneva, Verdana, sans-serif;
+}
+img.b {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
